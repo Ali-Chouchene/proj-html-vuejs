@@ -1,11 +1,13 @@
-<script >
+<script>
+import { store } from '../data/store'
 import HeaderInfo from './subcomponents/HeaderInfo.vue'
+import NavBar from './subcomponents/NavBar.vue'
 export default {
     name: 'AppHeader',
-    components: { HeaderInfo },
+    components: { HeaderInfo, NavBar },
     data() {
         return {
-
+            store,
         }
     }
 }
@@ -13,10 +15,11 @@ export default {
 
 <template>
     <header>
-        <div>
-            <header-info></header-info>
+        <header-info></header-info>
+        <div class="container h-nav d-flex align-items-center justify-content-between">
+            <img src="../assets/img/logo.png" alt="GAMEHOAX">
+            <nav-bar v-for="option in store.navs" :item="option"></nav-bar>
         </div>
-
     </header>
 </template>
 
@@ -24,5 +27,9 @@ export default {
 header {
     height: 15vh;
     background-color: black;
+
+    .h-nav {
+        height: 10vh;
+    }
 }
 </style>

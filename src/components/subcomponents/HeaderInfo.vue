@@ -51,7 +51,7 @@ export default {
         height: 100%;
 
         .left-h-nav {
-            width: 200px;
+            width: 230px;
         }
 
         .bar {
