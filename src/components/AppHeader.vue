@@ -19,7 +19,7 @@ export default {
         <div class="container h-nav d-flex align-items-center justify-content-between">
             <img src="../assets/img/logo.png" alt="GAMEHOAX">
             <!--navbar componente-->
-            <div class="d-flex nav-bar align-items-center ">
+            <div class="d-flex nav-bar align-items-center justify-content-between ">
                 <nav-bar v-for="option in store.navs" :item="option"></nav-bar>
             </div>
             <div class="h-controls d-flex justify-content-between align-items-center">
@@ -39,7 +39,7 @@ export default {
 <style lang="scss" scoped>
 header {
     height: 15vh;
-    background-color: black;
+    background-color: #1d1427;
 
     .h-nav {
         height: 10vh;
@@ -65,7 +65,7 @@ header {
     }
 
     .nav-bar {
-        width: 600px;
+        width: 650px;
     }
 
 

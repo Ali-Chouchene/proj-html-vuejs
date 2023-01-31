@@ -43,7 +43,6 @@ export default {
 
 .info {
     height: 5vh;
-    background-color: rgb(0, 0, 0);
     border-bottom: 1px solid rgb(94, 94, 94);
 
     .info-nav {
