@@ -12,25 +12,24 @@ export default {
 </script>
 
 <template>
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div v-for="banner in store.jumboBanners" class="carousel-item active">
-                <img :src="`../../assets/img/banners/cms-banner-${banner.img}.jpg`" class="d-block w-100"
-                    :alt="banner.title">
-            </div>
-
+    <div class="jumbo">
+        <img src="../../assets/img/banners/5.jpg" alt="">
+        <div>
+            <h1>{{ store.jumboBanners[0].title }}</h1>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
     </div>
 </template>
 
 <style lang="scss" scoped>
+.jumbo {
+    background-color: rgb(233, 54, 54);
+    height: 75vh;
 
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+}
 </style>

@@ -14,7 +14,9 @@ export default {
 
 <template>
     <main>
-        <jumbo></jumbo>
+        <div>
+            <jumbo></jumbo>
+        </div>
     </main>
 </template>
 
