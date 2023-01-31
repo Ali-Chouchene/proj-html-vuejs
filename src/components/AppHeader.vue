@@ -18,7 +18,20 @@ export default {
         <header-info></header-info>
         <div class="container h-nav d-flex align-items-center justify-content-between">
             <img src="../assets/img/logo.png" alt="GAMEHOAX">
-            <nav-bar v-for="option in store.navs" :item="option"></nav-bar>
+            <!--navbar componente-->
+            <div class="d-flex nav-bar align-items-center ">
+                <nav-bar v-for="option in store.navs" :item="option"></nav-bar>
+            </div>
+            <div class="h-controls d-flex justify-content-between align-items-center">
+                <font-awesome-icon class="icon" icon="fa-solid fa-magnifying-glass" />
+                <font-awesome-icon class="icon" icon="fa-regular fa-user" />
+                <div class="d-flex align-items-center">
+                    <font-awesome-icon class="icon" icon="fa-solid fa-bag-shopping" />
+                    <span>
+                        <p class="tot ps-1">(0) £0.00</p>
+                    </span>
+                </div>
+            </div>
         </div>
     </header>
 </template>
@@ -31,5 +44,31 @@ header {
     .h-nav {
         height: 10vh;
     }
+
+    .h-controls {
+        width: 200px;
+
+        .icon {
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+
+            &:hover {
+                color: #f9aa01;
+            }
+        }
+
+        .tot {
+            color: #f9aa01;
+            margin: 0;
+        }
+    }
+
+    .nav-bar {
+        width: 600px;
+    }
+
+
+
 }
 </style>

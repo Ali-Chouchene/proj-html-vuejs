@@ -10,5 +10,7 @@ export default {
 </template>
 
 <style lang="scss">
-
+* {
+  font-family: 'Play', sans-serif;
+}
 </style>

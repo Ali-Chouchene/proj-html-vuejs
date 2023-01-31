@@ -29,13 +29,12 @@ export default {
         margin: 0;
 
         a {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
 
             &:hover {
                 color: #f9aa01;
             }
-
-
 
             &:active {
                 color: #f9aa01;
