@@ -33,15 +33,15 @@ export const store = reactive({
 
     jumboBanners: [
         {
-            lable: 'Upcomming Stock',
+            label: 'Upcomming Stock',
             title: "Assassin's Creed Mirage"
         },
         {
-            lable: 'Most Popular',
+            label: 'Most Popular',
             title: 'Battlefiels 4'
         },
         {
-            lable: 'Latest Game',
+            label: 'Latest Game',
             title: "Assassin's Creed Unity"
         },
         {
@@ -49,7 +49,7 @@ export const store = reactive({
             title: "Dragon's Dogma"
         },
         {
-            lable: '30% Discount',
+            label: '30% Discount',
             title: "World Of Tanks"
         },
     ]

@@ -21,5 +21,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+main {
+    background-image: url(../assets/img/body-bg.jpg);
 
+}
 </style>
