@@ -1,9 +1,9 @@
 <script>
 import { store } from '../../data/store'
-import Lable from './Lable.vue'
+import Tags from './Tags.vue'
 export default {
     name: 'Jumbo',
-    components: { Lable },
+    components: { Tags },
     data() {
         return {
             store,
@@ -13,16 +13,18 @@ export default {
 </script>
 
 <template>
-    <div id="jumbo" class="carousel slide">
+    <div id="jumbo" class="carousel slide d-none d-lg-block">
         <div class="carousel-inner h-100">
             <div class="carousel-item active">
                 <img :src="`../../public/banners/0.jpg`" class="d-block w-100 banner-img" alt="Resident Evil 4">
-                <lable class="product-info " title="Resident Evil 4 Remake" label="Upcoming Stock"></lable>
+                <tags class="product-info" big="big" :button="true" title="Resident Evil 4 Remake"
+                    label="Upcoming Stock"></tags>
             </div>
             <div v-for="banner in store.jumboBanners" class="carousel-item">
                 <img :src="`../../public/banners/${banner.img}.jpg`" :key="banner.img" class="d-block w-100 banner-img"
                     :alt="banner.title">
-                <lable class="product-info " :title="banner.title" :label="banner.label"></lable>
+                <tags class="product-info" big="big" :button="true" :title="banner.title" :label="banner.label">
+                </tags>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#jumbo" data-bs-slide="prev">

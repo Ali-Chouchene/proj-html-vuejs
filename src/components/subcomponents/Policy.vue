@@ -78,4 +78,11 @@ img {
     width: 100px;
 
 }
+
+.col {
+    &:hover {
+        background-color: #f9aa01;
+        ;
+    }
+}
 </style>

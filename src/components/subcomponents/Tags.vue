@@ -1,7 +1,7 @@
 <script>
 import { store } from '../../data/store'
 export default {
-    name: 'Lable',
+    name: 'Tags',
     components: {},
     data() {
         return {
@@ -10,16 +10,18 @@ export default {
     },
     props: {
         title: String,
-        label: String
+        label: String,
+        button: Boolean,
+        big: String
     }
 }
 </script>
 
 <template>
     <div>
-        <h2 class="label">{{ label }}</h2>
-        <h1 class="title pb-3">{{ title }}</h1>
-        <button type="button" class="btn btn-light rounded-0 mt-5">Shop Now</button>
+        <h2 class="label d-none d-xl-block ">{{ label }}</h2>
+        <h1 :class="big" class="title pb-3">{{ title }}</h1>
+        <button v-if="button" type="button" class="btn btn-light rounded-0 mt-5">Shop Now</button>
     </div>
 </template>
 
@@ -32,13 +34,16 @@ export default {
     clip-path: polygon(100% 0, 89% 100%, 0 100%, 10% 0);
     padding: 0.3rem;
     font-weight: 700;
+    font-size: 30px;
 }
 
 .title {
-    font-size: 50px;
     color: white;
-    font-size: 70px;
     font-weight: 600;
+}
+
+.big {
+    font-size: 70px;
 }
 
 button:hover {
