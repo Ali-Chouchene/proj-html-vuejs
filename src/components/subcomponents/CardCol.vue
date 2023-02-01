@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <div class="col mb-5">
+    <div class="col  mb-1">
         <img class="img-fluid" :src="`../../public/banners/${img}.jpg`" :alt="title">
         <tags class="product-info" :title="title" :label="label"></tags>
     </div>
@@ -25,13 +25,13 @@ export default {
     position: relative;
 
     img {
-        object-fit: contain;
+        object-fit: fill;
     }
 
     .product-info {
         position: absolute;
-        top: 15%;
-        right: 10%;
+        top: 20%;
+        right: 5%;
         width: 50%;
     }
 }

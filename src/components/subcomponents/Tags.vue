@@ -29,7 +29,7 @@ export default {
 .label {
     background-color: #f9aa01;
     margin-bottom: 2rem;
-    width: 350px;
+    width: 300px;
     text-align: center;
     clip-path: polygon(100% 0, 89% 100%, 0 100%, 10% 0);
     padding: 0.3rem;

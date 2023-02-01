@@ -7,13 +7,21 @@ export default {
 </script>
 
 <template>
-  <app-header></app-header>
-  <app-main></app-main>
 
+  <body>
+
+
+    <app-header></app-header>
+    <app-main></app-main>
+  </body>
 </template>
 
 <style lang="scss">
 * {
   font-family: 'Play', sans-serif;
+}
+
+body {
+  background-image: url(./assets/img/body-bg.jpg);
 }
 </style>

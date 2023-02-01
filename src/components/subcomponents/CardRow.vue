@@ -7,29 +7,13 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-2">
+    <div class="container py-5">
+        <div class="row">
             <slot></slot>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
-.col {
-    position: relative;
 
-    .product-info {
-        position: absolute;
-        top: 15%;
-        right: 10%;
-        width: 50%;
-
-        h2 {
-            font-size: 20px;
-        }
-
-
-
-    }
-}
 </style>
