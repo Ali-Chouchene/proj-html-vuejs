@@ -23,6 +23,7 @@ export default {
 <style lang="scss" scoped>
 .col {
     position: relative;
+    cursor: pointer;
 
     img {
         object-fit: fill;

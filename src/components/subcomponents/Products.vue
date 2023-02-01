@@ -45,6 +45,7 @@ export default {
     position: relative;
     top: 0;
     bottom: 0;
+    cursor: pointer;
 
     &:hover .img2 {
         display: block;

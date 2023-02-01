@@ -167,6 +167,27 @@ export const store = reactive({
             text: 'JoyStick',
             price: '£175.00'
         },
+    ],
+
+    blogs: [
+        {
+            img: 'blog1',
+            date: 'Jan 18,2022',
+            comments: '53',
+            text: 'Anyway REPS is a NYC agency repres enting photographers'
+        },
+        {
+            img: 'blog2',
+            date: 'May 30,2022',
+            comments: '37',
+            text: 'Nasual risus suscipit Lorem ipsum is simply text'
+        },
+        {
+            img: 'blog3',
+            date: 'Apr 13,2022',
+            comments: '517',
+            text: 'Nostrum lesum Christum Lorem Ipsum is simply text'
+        },
     ]
 
 })

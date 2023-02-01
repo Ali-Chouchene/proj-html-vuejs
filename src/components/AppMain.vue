@@ -7,9 +7,10 @@ import CardCol from './subcomponents/CardCol.vue'
 import CardS from './subcomponents/CardS.vue'
 import ProductsOption from './subcomponents/ProductsOption.vue'
 import Products from './subcomponents/Products.vue'
+import BlogCard from './subcomponents/BlogCard.vue'
 export default {
     name: 'AppMain',
-    components: { Jumbo, Policy, CardRow, CardCol, CardS, ProductsOption, Products },
+    components: { Jumbo, Policy, CardRow, CardCol, CardS, ProductsOption, Products, BlogCard },
     data() {
         return {
             store,
@@ -56,6 +57,23 @@ export default {
         <card-row>
             <products v-for="prod in store.Products1" :prod="prod"></products>
         </card-row>
+
+        <!---TOO DOO SECOND JUMBO-->
+
+        <div class="spacer"></div>
+        <h1 class="mt-3 text-center">New Game Blogs</h1>
+        <div class="y-line"></div>
+        <card-row>
+            <blog-card v-for="blog in store.blogs" :key="blog.img" :blog="blog"></blog-card>
+        </card-row>
+        <div class="container">
+            <div class="line"></div>
+        </div>
+        <div class="container my-5">
+            <div class="d-flex justify-content-between px-4">
+                <img v-for="n in 5" :src="`../../public/brands/brand-0${n}.png`" :alt="n">
+            </div>
+        </div>
     </main>
 </template>
 
@@ -83,6 +101,11 @@ main {
 
     .spacer {
         margin: 10rem 0;
+
+    }
+
+    .line {
+        border: 1px solid rgb(145, 138, 138);
     }
 }
 </style>
