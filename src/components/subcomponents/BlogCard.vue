@@ -1,7 +1,7 @@
 <script>
 import Tags from './Tags.vue';
 export default {
-    name: 'BolgCard',
+    name: 'BlogCard',
     components: { Tags },
     props: {
         img: String,
@@ -11,7 +11,6 @@ export default {
     props: {
         blog: Object
     }
-
 }
 
 </script>
@@ -38,7 +37,6 @@ export default {
 
 .col {
     max-width: 450px;
-
 
     .box {
         display: flex;

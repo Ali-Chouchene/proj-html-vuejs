@@ -67,9 +67,11 @@ export default {
             </card-row>
             <div class="spacer"></div>
         </section>
+
         <section id="our-team">
             <crew-jumbo></crew-jumbo>
         </section>
+
         <section id="blog">
             <h1 class="mt-5 text-center">New Game Blogs</h1>
             <div class="y-line"></div>
@@ -77,11 +79,13 @@ export default {
                 <blog-card v-for="blog in store.blogs" :key="blog.img" :blog="blog"></blog-card>
             </card-row>
         </section>
+
         <section id="media">
             <div class="container">
                 <div class="line"></div>
             </div>
         </section>
+
         <section id="brands">
             <div class="container my-5">
                 <div class="d-flex justify-content-between px-4">
@@ -96,8 +100,6 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 main {
-
-
     h1 {
         color: white;
         font-weight: 600;
@@ -118,7 +120,6 @@ main {
 
     .spacer {
         margin: 10rem 0;
-
     }
 
     .line {
@@ -134,7 +135,6 @@ main {
 
         &:hover {
             box-shadow: 5px 5px 15px 5px $orange;
-
         }
     }
 

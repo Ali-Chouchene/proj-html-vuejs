@@ -11,7 +11,6 @@ export default {
     },
 }
 </script>
-
 <template>
     <footer>
         <section id="info">

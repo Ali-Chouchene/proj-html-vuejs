@@ -12,7 +12,6 @@ export default {
     }
 }
 </script>
-
 <template>
     <header>
         <header-info id="top"></header-info>
