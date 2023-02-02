@@ -31,6 +31,7 @@ export default {
     right: 2%;
     bottom: 2%;
     z-index: 3;
+    border: 2px solid black;
 
     .icon {
         transform: rotate(-45deg);
