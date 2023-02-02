@@ -19,8 +19,18 @@ export default {
         <div class="container h-nav d-flex align-items-center justify-content-between">
             <img src="../assets/img/logo.png" alt="GAMEHOAX">
             <!--navbar componente-->
+            <div class="btn-group d-block ms-5 d-lg-none">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Menu
+                </button>
+                <ul class="dropdown-menu">
+                    <li v-for="option in store.navs"><a class="dropdown-item" :href="option.link">{{ option.text }}</a>
+                    </li>
+                </ul>
+            </div>
             <div class="d-flex nav-bar align-items-center justify-content-between ">
-                <nav-bar v-for="option in store.navs" :item="option"></nav-bar>
+                <nav-bar class="d-none d-lg-block" v-for="option in store.navs" :item="option"></nav-bar>
             </div>
             <div class="h-controls d-flex justify-content-between align-items-center">
                 <font-awesome-icon class="icon" icon="fa-solid fa-magnifying-glass" />
