@@ -6,27 +6,27 @@ export const store = reactive({
     navs: [
         {
             text: 'Home',
-            link: '#'
+            link: '#home'
         },
         {
             text: 'Shop',
-            link: '#'
+            link: '#shop'
         },
         {
             text: 'Blog',
-            link: '#'
+            link: '#blog'
         },
         {
             text: 'Media',
-            link: '#'
+            link: '#media'
         },
         {
-            text: 'ShortCode',
-            link: '#'
+            text: 'Info',
+            link: '#info'
         },
         {
-            text: 'Features',
-            link: '#'
+            text: 'Brands',
+            link: '#brands'
         },
 
     ],
@@ -187,6 +187,70 @@ export const store = reactive({
             date: 'Apr 13,2022',
             comments: '517',
             text: 'Nostrum lesum Christum Lorem Ipsum is simply text'
+        },
+    ],
+    footerOptions: [
+        {
+            title: 'Information',
+            links: [
+                {
+                    url: '#',
+                    text: 'Bookmark'
+                },
+                {
+                    url: '#',
+                    text: 'Features'
+                },
+                {
+                    url: '#',
+                    text: 'Sitemap'
+                },
+                {
+                    url: '#',
+                    text: 'Lists'
+                },
+                {
+                    url: '#',
+                    text: 'Contact Us'
+                }],
+        },
+        {
+            title: 'Extra',
+            links: [
+                {
+                    url: '#',
+                    text: 'Delivery'
+                },
+                {
+                    url: '#',
+                    text: 'Cart'
+                },
+                {
+                    url: '#',
+                    text: 'Terms conditions'
+                },
+                {
+                    url: '#',
+                    text: 'My account'
+                },
+                {
+                    url: '#',
+                    text: 'About us'
+                }],
+        }
+    ],
+    crew: [
+        {
+            name: 'Michael De Santa',
+            role: 'Web Developer',
+            img: '2',
+            text: "Im Michael and lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quia nobis ea eius repellat commodi reiciendis dolorem consectetur adipisicing"
+        },
+        {
+            name: 'Christopher Wayne',
+            role: 'Data Analyst',
+            img: '3',
+            text: "Im Christopher and lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quia nobis ea eius repellat commodi reiciendis dolorem consectetur adipisicing"
         },
     ]
 

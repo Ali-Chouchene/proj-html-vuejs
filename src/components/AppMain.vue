@@ -8,9 +8,11 @@ import CardS from './subcomponents/CardS.vue'
 import ProductsOption from './subcomponents/ProductsOption.vue'
 import Products from './subcomponents/Products.vue'
 import BlogCard from './subcomponents/BlogCard.vue'
+import CrewJumbo from './subcomponents/CrewJumbo.vue'
+import ScrollTop from './subcomponents/ScrollTop.vue';
 export default {
     name: 'AppMain',
-    components: { Jumbo, Policy, CardRow, CardCol, CardS, ProductsOption, Products, BlogCard },
+    components: { Jumbo, Policy, CardRow, CardCol, CardS, ProductsOption, Products, BlogCard, CrewJumbo, ScrollTop },
     data() {
         return {
             store,
@@ -21,59 +23,72 @@ export default {
 
 <template>
     <main>
-        <jumbo></jumbo>
-        <policy></policy>
-        <card-row>
-            <card-col img="2" title="Assassin's Creed Unity" label="Most Popular"></card-col>
-            <card-col img="1" title="Battlefiels 4" label="Latest Game"></card-col>
-        </card-row>
-        <h1 class="mt-5 text-center">Special Category</h1>
-        <div class="y-line"></div>
-        <card-row>
-            <card-s img="1" title="Call of Duty"></card-s>
-            <card-s img="2" title="PlayerUnknown's Battlegrounds"></card-s>
-            <card-s img="3" title="Jump Force"></card-s>
-        </card-row>
-        <h1 class="mt-5 text-center">Our Products</h1>
-        <div class="y-line"></div>
-        <div class="box d-flex">
-            <products-option v-for="option in store.ProductOptions" :key="option.id"
-                :text="option.text"></products-option>
-        </div>
-        <card-row>
-            <products v-for="prod in store.Products" :prod="prod"></products>
-        </card-row>
-        <div class="spacer"></div>
-        <card-row>
-            <card-col img="3" title="Dragon's Dogma" label="20% Discount"></card-col>
-            <card-col img="4" title="World Of Tanks" label="30% Discount"></card-col>
-        </card-row>
-        <h1 class="mt-5 text-center">Deal Of The Day</h1>
-        <div class="y-line"></div>
-        <div class="box mt-5 d-flex">
-            <products-option v-for="option in store.ProductOptions1" :key="option.id"
-                :text="option.text"></products-option>
-        </div>
-        <card-row>
-            <products v-for="prod in store.Products1" :prod="prod"></products>
-        </card-row>
+        <section id="home">
+            <scroll-top></scroll-top>
+            <jumbo></jumbo>
+            <policy></policy>
 
-        <!---TOO DOO SECOND JUMBO-->
+            <card-row>
+                <card-col img="2" title="Assassin's Creed Unity" label="Most Popular"></card-col>
+                <card-col img="1" title="Battlefiels 4" label="Latest Game"></card-col>
+            </card-row>
+            <h1 class="mt-5 text-center">Special Category</h1>
+            <div class="y-line"></div>
+            <card-row>
+                <card-s img="1" title="Call of Duty"></card-s>
+                <card-s img="2" title="PlayerUnknown's Battlegrounds"></card-s>
+                <card-s img="3" title="Jump Force"></card-s>
+            </card-row>
+        </section>
 
-        <div class="spacer"></div>
-        <h1 class="mt-3 text-center">New Game Blogs</h1>
-        <div class="y-line"></div>
-        <card-row>
-            <blog-card v-for="blog in store.blogs" :key="blog.img" :blog="blog"></blog-card>
-        </card-row>
-        <div class="container">
-            <div class="line"></div>
-        </div>
-        <div class="container my-5">
-            <div class="d-flex justify-content-between px-4">
-                <img v-for="n in 5" class="pointer" :src="`../../public/brands/brand-0${n}.png`" :alt="n">
+        <section id="shop">
+            <h1 class="mt-5 text-center">Our Products</h1>
+            <div class="y-line"></div>
+            <div class="box d-flex">
+                <products-option v-for="option in store.ProductOptions" :key="option.id"
+                    :text="option.text"></products-option>
             </div>
-        </div>
+            <card-row>
+                <products v-for="prod in store.Products" :prod="prod"></products>
+            </card-row>
+            <div class="spacer"></div>
+            <card-row>
+                <card-col img="3" title="Dragon's Dogma" label="20% Discount"></card-col>
+                <card-col img="4" title="World Of Tanks" label="30% Discount"></card-col>
+            </card-row>
+            <h1 class="mt-5 text-center">Deal Of The Day</h1>
+            <div class="y-line"></div>
+            <div class="box mt-5 d-flex">
+                <products-option v-for="option in store.ProductOptions1" :key="option.id"
+                    :text="option.text"></products-option>
+            </div>
+            <card-row>
+                <products v-for="prod in store.Products1" :prod="prod"></products>
+            </card-row>
+            <div class="spacer"></div>
+        </section>
+        <section id="our-team">
+            <crew-jumbo></crew-jumbo>
+        </section>
+        <section id="blog">
+            <h1 class="mt-5 text-center">New Game Blogs</h1>
+            <div class="y-line"></div>
+            <card-row>
+                <blog-card v-for="blog in store.blogs" :key="blog.img" :blog="blog"></blog-card>
+            </card-row>
+        </section>
+        <section id="media">
+            <div class="container">
+                <div class="line"></div>
+            </div>
+        </section>
+        <section id="brands">
+            <div class="container my-5">
+                <div class="d-flex justify-content-between px-4">
+                    <img v-for="n in 5" class="pointer" :src="`../../public/brands/brand-0${n}.png`" :alt="n">
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -121,6 +136,13 @@ main {
             box-shadow: 5px 5px 15px 5px $orange;
 
         }
+    }
+
+    #our-team {
+        min-height: 50vh;
+        background-image: url(../../public/banners/parallax.jpg);
+        object-fit: fill;
+        background-position: bottom;
     }
 }
 </style>

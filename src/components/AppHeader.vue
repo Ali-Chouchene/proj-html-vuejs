@@ -15,7 +15,7 @@ export default {
 
 <template>
     <header>
-        <header-info></header-info>
+        <header-info id="top"></header-info>
         <div class="container h-nav d-flex align-items-center justify-content-between">
             <img src="../assets/img/logo.png" alt="GAMEHOAX">
             <!--navbar componente-->
