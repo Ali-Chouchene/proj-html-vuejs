@@ -65,25 +65,26 @@ export default {
 .col {
     &:hover {
         background-color: $orange;
-
-        h6 {
-            margin: 0;
-            padding-right: 1rem;
-            border-right: 1px solid gray;
-        }
-
-        p {
-            margin: 0;
-            padding-right: 1rem;
-            border-right: 1px solid gray;
-            color: rgb(168, 159, 159);
-        }
-
-        img {
-            height: 100px;
-            width: 100px;
-
-        }
     }
+
+    h6 {
+        margin: 0;
+        padding-right: 1rem;
+        border-right: 1px solid gray;
+    }
+
+    p {
+        margin: 0;
+        padding-right: 1rem;
+        border-right: 1px solid gray;
+        color: rgb(168, 159, 159);
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+
+    }
+
 }
 </style>
