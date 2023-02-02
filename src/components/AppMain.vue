@@ -71,13 +71,15 @@ export default {
         </div>
         <div class="container my-5">
             <div class="d-flex justify-content-between px-4">
-                <img v-for="n in 5" :src="`../../public/brands/brand-0${n}.png`" :alt="n">
+                <img v-for="n in 5" class="pointer" :src="`../../public/brands/brand-0${n}.png`" :alt="n">
             </div>
         </div>
     </main>
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
+
 main {
 
 
@@ -88,7 +90,7 @@ main {
 
     .y-line {
         width: 55px;
-        border: 1.5px solid #f9aa01;
+        border: 1.5px solid $orange;
         margin: 20px auto;
     }
 
@@ -106,6 +108,19 @@ main {
 
     .line {
         border: 1px solid rgb(145, 138, 138);
+    }
+
+    .pointer {
+        cursor: pointer;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        border-radius: 10px;
+        mix-blend-mode: color-dodge;
+
+        &:hover {
+            box-shadow: 5px 5px 15px 5px $orange;
+
+        }
     }
 }
 </style>

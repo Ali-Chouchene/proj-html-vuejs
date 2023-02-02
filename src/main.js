@@ -10,10 +10,14 @@ import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 import { faComments } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 import App from './App.vue'
 
-library.add(faMagnifyingGlass, faUser, faBagShopping, faStar, faCalendarDays, faComments);
+library.add(faMagnifyingGlass, faUser, faBagShopping, faStar, faCalendarDays, faComments, faLocationDot, faPhone, faEnvelope);
 
 const app = createApp(App)
 

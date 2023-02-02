@@ -26,6 +26,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as *;
+
 .col {
     max-width: 450px;
     min-height: 500px;
@@ -41,12 +43,12 @@ export default {
         }
 
         h5 {
-            color: white;
+            color: $white;
             font-weight: 600;
         }
 
         a {
-            color: #f9aa01;
+            color: $orange;
         }
 
         .overlay {

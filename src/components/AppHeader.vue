@@ -37,9 +37,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
+
 header {
     height: 15vh;
-    background-color: #1d1427;
+    background-color: $dark;
 
     .h-nav {
         height: 10vh;
@@ -49,17 +51,17 @@ header {
         width: 200px;
 
         .icon {
-            color: white;
+            color: $white;
             font-size: 20px;
             cursor: pointer;
 
             &:hover {
-                color: #f9aa01;
+                color: $orange;
             }
         }
 
         .tot {
-            color: #f9aa01;
+            color: $orange;
             margin: 0;
         }
     }
@@ -67,8 +69,5 @@ header {
     .nav-bar {
         width: 650px;
     }
-
-
-
 }
 </style>

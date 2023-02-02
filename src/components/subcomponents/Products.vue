@@ -39,6 +39,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as *;
+
 .col {
     height: 300px;
     padding: 0 7px;
@@ -68,7 +70,7 @@ export default {
 
 
     .label {
-        background-color: #f9aa01;
+        background-color: $orange;
         width: 20%;
         text-align: center;
         clip-path: polygon(100% 0, 89% 100%, 0 100%, 10% 0);
@@ -91,12 +93,12 @@ export default {
         }
 
         h5 {
-            color: white;
+            color: $white;
 
         }
 
         h6 {
-            color: #f9aa01;
+            color: $orange;
         }
 
         .old-price {

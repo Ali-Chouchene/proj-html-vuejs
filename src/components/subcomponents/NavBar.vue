@@ -20,8 +20,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as *;
+
 * {
-    color: white;
+    color: $white;
     text-decoration: none;
     list-style: none;
 
@@ -33,11 +35,11 @@ export default {
             font-weight: 700;
 
             &:hover {
-                color: #f9aa01;
+                color: $orange;
             }
 
             &:active {
-                color: #f9aa01;
+                color: $orange;
             }
         }
     }

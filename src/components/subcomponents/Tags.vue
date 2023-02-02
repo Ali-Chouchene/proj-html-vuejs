@@ -26,8 +26,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as *;
+
 .label {
-    background-color: #f9aa01;
+    background-color: $orange;
     margin-bottom: 2rem;
     width: 300px;
     text-align: center;
@@ -38,7 +40,7 @@ export default {
 }
 
 .title {
-    color: white;
+    color: $white;
     font-weight: 600;
 }
 
@@ -47,6 +49,6 @@ export default {
 }
 
 button:hover {
-    background-color: #f9aa01;
+    background-color: $orange;
 }
 </style>

@@ -21,6 +21,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as *;
+
 .choice {
     width: calc(100% / 4);
     flex-grow: 1;
@@ -38,7 +40,7 @@ export default {
         font-weight: 600;
 
         &:hover {
-            color: #f9aa01;
+            color: $orange;
             margin: 0;
         }
     }

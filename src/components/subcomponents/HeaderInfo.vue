@@ -37,6 +37,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as *;
+
 * {
     color: rgb(172, 169, 169);
 }
@@ -46,7 +48,7 @@ export default {
     border-bottom: 1px solid rgb(94, 94, 94);
 
     .info-nav {
-        color: white;
+        color: $white;
         height: 100%;
 
         .left-h-nav {
@@ -62,7 +64,7 @@ export default {
             text-decoration: none;
 
             &:hover {
-                color: white;
+                color: $white;
             }
 
         }

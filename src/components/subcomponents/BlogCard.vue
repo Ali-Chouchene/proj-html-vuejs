@@ -34,6 +34,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as *;
+
 .col {
     max-width: 450px;
 
@@ -49,12 +51,12 @@ export default {
         }
 
         .icon {
-            color: #f9aa01;
+            color: $orange;
         }
     }
 
     h5 {
-        color: white;
+        color: $white;
         font-weight: 500;
         padding-top: 1rem;
         font-size: 15px;

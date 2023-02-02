@@ -56,8 +56,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as *;
+
 * {
-    color: white;
+    color: $white;
 }
 
 h6 {
@@ -81,7 +83,7 @@ img {
 
 .col {
     &:hover {
-        background-color: #f9aa01;
+        background-color: $orange;
         ;
     }
 }
